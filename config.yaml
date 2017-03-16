@@ -1,0 +1,20 @@
+database:
+  mysql:
+    username: root
+    password: yamiedie
+    host: 127.0.0.1
+    port: 3306
+    dbname: game_lord
+    max_idle_connections: 5
+    max_open_connections: 5
+  redis:
+    password: foobared
+    host: 127.0.0.1
+    port: 6379
+    db: 0
+    login_token_expiration: 12h
+    game_token_expiration: 15h
+server:
+  address: :5678
+module:
+  hangman: true
